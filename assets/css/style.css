@@ -385,6 +385,28 @@ span.r-mr-15 {
     color: #fff;
 }
 
+/******************************************Aside*/
+
+.aside-ads-list {
+    margin-top: 25px;
+    width: 26%;
+}
+
+.aside-ads-list.container {
+    margin-left: 0;
+    padding: 0;
+}
+
+.aside-ad {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.aside-ads-list img {
+    width: 100%;
+}
+
 /***********************************************Footer*/
 /********************************Footer-top*/
 .famous-stores, .famous-pages {
@@ -410,28 +432,6 @@ span.r-mr-15 {
     width: 100%;
     font-size: 22px;
     font-weight: 400;
-}
-
-/******************************************Aside*/
-
-.aside-ads-list {
-    margin-top: 25px;
-    width: 26%;
-}
-
-.aside-ads-list.container {
-    margin-left: 0;
-    padding: 0;
-}
-
-.aside-ad {
-    width: 100%;
-    margin-bottom: 15px;
-    overflow: hidden;
-}
-
-.aside-ads-list img {
-    width: 100%;
 }
 
 /********************************Footer-bottom*/
