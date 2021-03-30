@@ -1,5 +1,7 @@
 $(function(){
 
+
+
     $("#sticky").clone().appendTo("#fading-header");
 
     $(window).on('scroll', function() {
@@ -58,14 +60,28 @@ $(function(){
         $(this).siblings().children().css("color","#333");
     });
 
+    $(".circle-carousel").owlCarousel({
+
+        dots: false,
+        responsive: {
+            330 : { items : 2.5},
+            400 : { items : 3.5},
+            530 : { items : 4.5},
+            600 : { items : 5.5 },
+            790 : { items : 7.5},
+            1000 : { items : 9.5},
+            1170 : { items : 10.5}
+        }
+    });
+
     $(".circle-item").hover(function(){
 
-        $(this).children(".circle").css("border","2px solid #f68428");
+        $(this).children().children(".circle").css("border","2px solid #f68428");
         $(this).children("div").css("color","#f68428");
     },function(){
-        $(this).children(".circle").css("border","2px solid #e6e6e6");
-        $(this).children("#circle1").css("border","2px solid #a101af");
-        $(this).children("#circle2").css("border","2px solid #a101af");
+        $(this).children().children(".circle").css("border","2px solid #e6e6e6");
+        $(this).children().children("#circle1").css("border","2px solid #a101af");
+        $(this).children().children("#circle2").css("border","2px solid #a101af");
         $(this).children("div").css("color","#212529");
         
     });

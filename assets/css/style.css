@@ -34,6 +34,7 @@ header {
     background: #fff;
 }
 
+/*********************************Header Top*/
 .header-top {
     width: 100%;
     height: 20px;
@@ -62,6 +63,8 @@ header {
 .header-top a:hover {
     color: rgb(90, 90, 90);
 }
+
+/********************************Fixed Header*/
 
 .fixed-header {
     position:fixed;
@@ -114,6 +117,8 @@ header {
     transition: 0.5s ease-in;
 }
 
+/**************************************Logo*/
+
 .logo-box {
     display: flex;
     align-items: center;
@@ -126,6 +131,8 @@ header {
     width: 147.59px;
 }
 
+/**************************************Search*/
+
 .topSearch-box {
     position: relative;
     display: flex;
@@ -133,37 +140,6 @@ header {
     justify-content: center;
     width: 53.875%;
     height: 100%;
-}
-
-.search-icon {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    right: 15px;
-    bottom: calc(50% - 9px);
-    cursor: pointer;
-    background-image: url(../img/search.svg);
-}
-
-.account-list>div.user-basket {
-    padding-right: 0;
-}
-
-.user-icon, .favourites-icon, .basket-icon,
-.user-icon-hover, .favourites-icon-hover, .basket-icon-hover {
-    width: 20px;
-    height: 20px;
-    bottom: calc(50% - 9px);
-    cursor: pointer;
-    padding-right: 4px;
-}
-
-.hover-icon {
-    transition: opacity 1s ease;
-}
-
-.filter-orange{
-    filter: invert(57%) sepia(92%) saturate(1517%) hue-rotate(343deg) brightness(100%) contrast(94%);
 }
 
 #topSearch {
@@ -181,6 +157,18 @@ header {
 #topSearch:focus {
     border: 2px solid #f68428;
 }
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    bottom: calc(50% - 9px);
+    cursor: pointer;
+    background-image: url(../img/search.svg);
+}
+
+/**************************************Account List*/
 
 .account-list {
     display: flex;
@@ -200,40 +188,21 @@ header {
     cursor: pointer;
 }
 
-/***********************************Navigation*/
-
-.main-nav {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    height: 34px;
-    border-bottom: 1px solid #e8e8e8;
-    overflow: hidden;
+.user-icon, .favourites-icon, .basket-icon,
+.user-icon-hover, .favourites-icon-hover, .basket-icon-hover {
+    width: 20px;
+    height: 20px;
+    bottom: calc(50% - 9px);
+    cursor: pointer;
+    padding-right: 4px;
 }
 
-.main-nav>.container {
-    padding: 0;
+.hover-icon {
+    transition: opacity 1s ease;
 }
 
-.main-nav-item-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-nav-item-box:hover .nav-tab {
-    display: block;
-}
-
-.main-nav-item a {
-    display: block!important;
-    padding: 5px 22px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.18px;
+.filter-orange{
+    filter: invert(57%) sepia(92%) saturate(1517%) hue-rotate(343deg) brightness(100%) contrast(94%);
 }
 
 .user-account-content {
@@ -280,29 +249,79 @@ header {
     font-weight: 600;
 }
 
-/****************************************Main-Bottom Ad List*/
-
-.circle-carousel {
-    padding-top: 20px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
+.account-list>div.user-basket {
+    padding-right: 0;
 }
 
-.circle-track {
+/***********************************Navigation*/
+
+.main-nav {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 1500px;
+    height: 34px;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.main-nav>.container {
+    padding: 0;
+}
+
+.main-nav-item-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav-item-box:hover .nav-tab {
+    display: block;
+}
+
+.main-nav-item a {
+    display: block!important;
+    padding: 5px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+}
+
+
+
+/****************************************Main
+/******************************Circle-slider*/
+
+.circle-carousel-track {
+    padding-top: 15px; 
 }
 
 .circle-item {
     cursor: pointer;
 }
 
+.circle-box {
+    width: 74px;
+    height: 120px;
+}
+
 .circle-item-desc {
     padding-top: 10px;
     text-align: center;
     font-size: 12px;
+}
+
+.circle {
+    width: 74px;
+    height: 74px;
+    border: 2px solid #e6e6e6;
+    border-radius: 50% 50%;
+}
+
+.circle img {
+    width: 100%;
 }
 
 #circle1 {
@@ -319,16 +338,9 @@ header {
     border-radius: 50% 50%;
 }
 
-.circle {
-    width: 74px;
-    height: 74px;
-    border: 2px solid #e6e6e6;
-    border-radius: 50% 50%;
-}
 
-.circle img {
-    width: 100%;
-}
+/*******************************Main Ad List*/
+/*****************************Bottom Ad List*/
 
 .main-ads-list {
     width: 67%;
@@ -408,7 +420,7 @@ span.r-mr-15 {
 }
 
 /***********************************************Footer*/
-/********************************Footer-top*/
+/*******************************************Footer-top*/
 .famous-stores, .famous-pages {
     width: 50%;
     margin: 15px 0;
@@ -434,7 +446,7 @@ span.r-mr-15 {
     font-weight: 400;
 }
 
-/********************************Footer-bottom*/
+/*****************************************Footer-bottom*/
 
 .nav-tab {
     display: none;
@@ -500,6 +512,7 @@ span.r-mr-15 {
 .bottom-footer {
     background-color: #1b1b1b;
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .bottom-footer p {
